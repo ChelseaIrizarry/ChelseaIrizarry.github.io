@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+image: https://chelseairizarry.github.io/assets/images/chelsea.jpg
 ---
 
 ![Sample Image](https://chelseairizarry.github.io/assets/images/chelsea.jpg)
