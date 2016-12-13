@@ -1,11 +1,17 @@
 ---
 layout: post
+<<<<<<< HEAD:_posts/2016-12-13_SocketIO.md
 title: "Socket IO Experience"
 date: 2016-12-12
+=======
+title: "The Sound of Freedom"
+date: 2015-01-09
+>>>>>>> parent of e647a61... updating photos and post info:_posts/2015-01-09-the-sound-of-freedom.md
 backgrounds:
-    - /assets/images/backgrounds/lightning.jpg
-thumb: https://chelseairizarry.github.io/assets/images/socketio.jpg
-tags: project databases
+    - https://dl.dropboxusercontent.com/u/18322837/cdn/Streetwill/desk.jpeg
+thumb: https://dl.dropboxusercontent.com/u/18322837/cdn/Streetwill/thumbs/drum-rudiment.jpeg
+category: music
+tags: relax fun songs playlist
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porta, felis eget vehicula porttitor, mauris ipsum tincidunt ligula, ac pretium risus sapien at metus. Donec pellentesque volutpat porttitor. Integer condimentum sagittis viverra. Vivamus suscipit quis lectus porta sollicitudin.
