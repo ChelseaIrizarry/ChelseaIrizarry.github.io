@@ -1,16 +1,15 @@
 ---
 layout: post
-title: "Big City Life"
-date: 2015-01-12
+title: "Working at the DKC"
+date: 2016-12-13
 backgrounds:
-    - https://dl.dropboxusercontent.com/u/18322837/cdn/Streetwill/vanilla.jpeg
-    - https://dl.dropboxusercontent.com/u/18322837/cdn/Streetwill/morning.jpeg
-thumb: https://dl.dropboxusercontent.com/u/18322837/cdn/Streetwill/thumbs/the-bridge.jpeg
-categories: travel city
-tags: work business metropolis
+     - /assets/images/backgrounds/dkc.jpg
+thumb: https://chelseairizarry.github.io/assets/images/dkclogo.jpg
+categories: work websites
+tags: work
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porta, felis eget vehicula porttitor, mauris ipsum tincidunt ligula, ac pretium risus sapien at metus. Donec pellentesque volutpat porttitor. Integer condimentum sagittis viverra. Vivamus suscipit quis lectus porta sollicitudin.
+**Lorem ipsum** dolor sit amet, consectetur adipiscing elit. _Ut porta_, felis eget vehicula `porttitor`, mauris ipsum tincidunt ligula, ac pretium risus sapien at metus. Donec pellentesque volutpat porttitor. Integer condimentum sagittis viverra. Vivamus suscipit quis lectus porta sollicitudin.
 
 > Nulla sollicitudin nibh a magna malesuada, vitae dictum tellus mollis. Etiam sit amet justo massa. Integer sed mi volutpat, sollicitudin orci eget, tincidunt tellus. Mauris vitae vestibulum mi.
 

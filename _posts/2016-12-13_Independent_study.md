@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Japanese Breeze"
-date: 2015-02-05
+title: "iOS Application Development"
+date: 2016-12-13
 backgrounds:
-    - https://dl.dropboxusercontent.com/u/18322837/cdn/Streetwill/tube.jpg
-thumb: https://dl.dropboxusercontent.com/u/18322837/cdn/Streetwill/thumbs/chemex.jpg
-categories: travel city
-tags: japan winter spring metropolis
+    - /assets/images/backgrounds/apples.jpg
+thumb: https://chelseairizarry.github.io/assets/images/swift.jpg
+categories: programming development
+tags: school
 ---
 
-**Lorem ipsum** dolor sit amet, consectetur adipiscing elit. _Ut porta_, felis eget vehicula `porttitor`, mauris ipsum tincidunt ligula, ac pretium risus sapien at metus. Donec pellentesque volutpat porttitor. Integer condimentum sagittis viverra. Vivamus suscipit quis lectus porta sollicitudin.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porta, felis eget vehicula porttitor, mauris ipsum tincidunt ligula, ac pretium risus sapien at metus. Donec pellentesque volutpat porttitor. Integer condimentum sagittis viverra. Vivamus suscipit quis lectus porta sollicitudin.
 
 > Nulla sollicitudin nibh a magna malesuada, vitae dictum tellus mollis. Etiam sit amet justo massa. Integer sed mi volutpat, sollicitudin orci eget, tincidunt tellus. Mauris vitae vestibulum mi.
 
