@@ -2,9 +2,10 @@
 layout: page
 title: About
 author: Chelsea Irizarry
-permalink: /about/
+permalink: /
 backgrounds: 
     - /assets/images/backgrounds/about.jpg
+
 ---
 ![Sample Image](https://chelseairizarry.github.io/assets/images/chelsea.jpg)
 
