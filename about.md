@@ -4,14 +4,12 @@ title: About
 permalink: /about/
 ---
 
-A medium inspired Jekyll blog theme. The basic idea came from the Ghost theme 
-[Readium 2.0](http://www.svenread.com/readium-ghost-theme/). I use mediator on my own blog [The Base](blog.base68.com).
+![Sample Image](https://chelseairizarry.github.io/assets/images/chelsea.jpg)
 
-You can **download** the theme here:
-[https://github.com/dirkfabisch/mediator](https://github.com/dirkfabisch/mediator) 
+Hello! I am a current University of Mary Washington senior studying computer science and digital studies. 
+I work as a tutor at the Digital Knowledge Center. 
+I assist students seeking help with WordPress, video, audio, or photo editing. Some of my interests are playing soccer and photography.
+-C
 
-You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Want to know more about me?
+Visit [chelseairizarry.org](http://chelseairizarry.org).

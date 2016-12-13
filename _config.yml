@@ -4,26 +4,26 @@ gems:
   - jekyll-paginate
 
 # Site settings
-title: "Mediator"
+title: "Chelsea Irizarry"
 description: > # this means to ignore newlines until "email:"
    A Jekyll theme - Medium inspired
 
-email: a-mail@mail.mail
+email: cirizarr@mail.umw.edu
 #blog logo
-logo: "/assets/images/df_logo.jpg"
+logo: "/assets/images/logo.jpg"
 # blog cover
-cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
+cover: "/assets/images/arches.jpg"
 
-name: 'Dirk Fabisch'
-author: 'Dirk Fabisch'
-author_image: "/assets/images/author.jpg"
+name: 'Chelsea Irizarry'
+author: 'Chelsea Irizarry'
+author_image: "/assets/images/chelsea.jpg"
 
 paginate:	5
 
-url: "http://myblog.***.***" # the base hostname & protocol for your site
+url: "https://chelseairizarry.github.io" # the base hostname & protocol for your site
 baseurl: ""
 #used to display twitter cards
-twitter_handle: '@dirkfabisch'
+twitter_handle: '@ChelseaIrizarry'
 
 #fill in disqus shortname to use disqus
 #disqus: disqus-shortname
@@ -45,7 +45,7 @@ social:
 #    share_link: "&amp;u="
 
   - icon:	github
-    url:	https://github.com/dirkfabisch
+    url:	https://github.com/ChelseaIrizarry
     desc:	Fork me on github
     share_url:
     share_title:
