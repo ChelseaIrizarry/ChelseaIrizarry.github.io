@@ -1,21 +1,30 @@
-Jekyll Themes
-=============
+Agency Jekyll theme
+====================
 
-A directory of the best-looking themes for Jekyll blogs
+Agency theme based on [Agency bootstrap theme ](http://startbootstrap.com/templates/agency/)
+
+# How to use
+
+###Portfolio 
+
+Portfolio projects are in '/_posts'
+
+Images are in '/img/portfolio'
+
+###About
+
+Images are in '/img/about/'
+
+###Team
+
+Team members and info are in '_config.yml'
+
+Images are in '/img/team/'
 
 
-Submitting a Theme
-------------------
+# Demo
 
-Have a theme you want to share?
+View this jekyll theme in action [here](https://y7kim.github.io/agency-jekyll-theme)
 
-* Fork the site on GitHub
-* Create a new post in the `_posts` directory and fill out the relevant YAML fields
-* Make a 250x200 thumbnail and drop it in the thumbnails directory. List its filename in the post's markdown file.
-* Test it out, then push your changes up and open a pull request.
-
-
-License
--------
-
-The contents of this repository are licensed under the [GNU Public License.](http://www.gnu.org/licenses/gpl-3.0.html)
+=========
+For more details, read [documentation](http://jekyllrb.com/)
