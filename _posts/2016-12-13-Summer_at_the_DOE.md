@@ -4,7 +4,7 @@ title: "Work for the Summer"
 date: 2016-12-13
 backgrounds:
     - /assets/images/backgrounds/doe.jpg
-thumb: https://chelseairizarry.github.io/assets/images/doelogo.jpg
+thumb: https://chelseairizarry.github.io/assets/images/backgrounds/doe.jpg
 categories: development work
 tags: office database
 ---

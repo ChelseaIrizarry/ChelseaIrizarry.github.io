@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "iOS Application Development"
-date: 2016-12-13
+date: 2016-12-12
 backgrounds:
     - /assets/images/backgrounds/apples.jpg
 thumb: https://chelseairizarry.github.io/assets/images/swift.jpg

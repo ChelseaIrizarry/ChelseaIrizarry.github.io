@@ -4,8 +4,7 @@ title: "Working at the DKC"
 date: 2016-12-13
 backgrounds:
      - /assets/images/backgrounds/dkc.jpg
-thumb: https://chelseairizarry.github.io/assets/images/dkclogo.jpg
-categories: work websites
+thumb: https://chelseairizarry.github.io/assets/images/backgrounds/dkc.jpg
 tags: work
 ---
 
