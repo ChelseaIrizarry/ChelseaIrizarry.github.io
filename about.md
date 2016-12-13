@@ -3,8 +3,9 @@ layout: page
 title: About
 permalink: /about/
 backgrounds: 
-    - /assets/images/backgrounds/map.jpg
-thumb: https://chelseairizarry.github.io/assets/images/chelsea.jpg
+    - /assets/images/backgrounds/about.jpg
+thumb: 
+    - /assets/images/about.jpg
 ---
 ![Sample Image](https://chelseairizarry.github.io/assets/images/chelsea.jpg)
 
