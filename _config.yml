@@ -6,7 +6,7 @@ gems:
 # Site settings
 title: "Chelsea Irizarry"
 description: > # this means to ignore newlines until "email:"
-   A CPSC350 blog.
+   A CPSC350 blog
 
 email: cirizarr@mail.umw.edu
 #blog logo
