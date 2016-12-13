@@ -1,29 +1,16 @@
-{% if page.cover %}
-{% assign cover = page.cover %}
-{% elsif site.cover %}
-{% assign cover = site.cover %}
-{% endif %}
-
-<header class="main-header detail-page image-bg {% if cover %} has-cover" style="background-image: url({{ cover | prepend: site.github.url | prepend: site.baseurl}})" {% else %} no-cover" {% endif %}>
-    <h1 class="page-title"><a href="{{ site.github.url}}/" title="{{ site.title }}">{{ site.title }}</a></h1>
-    <h2 class="page-description">{{ site.subtitle }}</h2>
-    <div class="nav">
-        <ul>
-            <li><a class="page-link" href="{{ site.github.url | prepend: site.baseurl}}/" title="Home">Home</a></li>
-
-            {% assign pages = site.pages | sort:"weight"  %}
-            {% for my_page in pages %}
-
-            {% if my_page.menutitle %}
-            {% assign title = my_page.menutitle %}
-            {% elsif site.title %}
-            {% assign title = my_page.title %}
-            {% endif %}
-
-            {% if title and my_page.visible != false %}
-            <li><a class="page-link" href="{{ my_page.url | prepend: site.github.url | prepend: site.baseurl}}" title="{{ title }}">{{ title }}</a></li>
-            {% endif %}
-            {% endfor %}
-        </ul>
-    </div>
-</header>
+ <div class="header">
+     <div class="container">
+         <h1 class="logo"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+         <nav class="nav-collapse">
+             <ul class="noList">
+                 {% for link in site.navigation %}{% assign current = nil %}{% if page.url contains link.url %}{% assign current = 'current' %}{% endif %}
+                 <li class="element {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+                     <a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+                 </li> 
+                 {% endfor %}
+                 <li> <a href="https://github.com/brianmaierjr/long-haul" target="_blank">GitHub</a></li>
+                 <li><a href="https://github.com/brianmaierjr/long-haul/archive/master.zip">Download Theme</a></li>
+             </ul>
+         </nav>
+     </div>
+ </div><!-- end .header -->
