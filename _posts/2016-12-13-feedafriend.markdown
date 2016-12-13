@@ -10,27 +10,27 @@ image2: /assets/article_images/2014-11-30-mediator_features/night-track-mobile.J
 I partnered up with Nate Nuval and Michael Prime to bring you Feed a Friend. An idea originating by the abundance or lack of mealswipes
 at the end of each semester. We wanted to propose a solution to the issue at hand in which students can help their fellow classmate in need.
 
-![Feed-a-Friend Team](https://chelseairizarry.github.io/assets/feedafriend/team3.jpg)
+![Feed-a-Friend Team](https://chelseairizarry.github.io/assets/feedafriend/team3.JPG)
 
 On our site, we allowed for two different types of users, Givers and Receivers. Givers are students with an abundance of mealswipes while 
 Receivers are students in need of mealswipes. 
 
-![About Feed-A-Friend](https://chelseairizarry.github.io/assets/feedafriend/about.png)
+![About Feed-A-Friend](https://chelseairizarry.github.io/assets/feedafriend/about.JPG)
 
 How to use Feed-A-Friend:
 1) Login
-![Login Page](https://chelseairizarry.github.io/assets/feedafriend/frontpage.png)
+![Login Page](https://chelseairizarry.github.io/assets/feedafriend/frontpage.JPG)
 
 Proceed as followed depending on your user type.
 
 Giver:
-![Giver Dashboard](https://chelseairizarry.github.io/assets/feedafriend/testg.png)
+![Giver Dashboard](https://chelseairizarry.github.io/assets/feedafriend/testg.JPG)
 
 2) Proceed to update availability, if needed.
 3) Respond to any pending requests in email.
 
 Receiver:
-![Receiver Dashboard](https://chelseairizarry.github.io/assets/feedafriend/testr.png)
+![Receiver Dashboard](https://chelseairizarry.github.io/assets/feedafriend/testr.JPG)
 
 2) Proceed to search by user or meal type.
 3) Request desired meal time and user.
