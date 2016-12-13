@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 thumb: https://chelseairizarry.github.io/assets/images/chelsea.jpg
-background: https://chelseairizarry.github.io/assets/images/background/about.jpg
+backgrounds: https://chelseairizarry.github.io/assets/images/background/about.jpg
 ---
 ![Sample Image](https://chelseairizarry.github.io/assets/images/chelsea.jpg)
 
