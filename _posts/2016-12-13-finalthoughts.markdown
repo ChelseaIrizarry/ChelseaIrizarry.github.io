@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Independent Study"
+title:  "Database and Websites"
 date:   2016-12-13 13:36:00
 categories: jekyll update
 image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
