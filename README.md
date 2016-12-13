@@ -1,35 +1,10 @@
-# Jekyll-Avalon
-[Demo](http://joshuaavalon.github.io/Jekyll-Avalon)
-![](https://raw.githubusercontent.com/joshuaavalon/Jekyll-Avalon/master/_screenshot/001.png)
+# jekyllDecent
+[![Build Status](https://travis-ci.org/jwillmer/jekyllDecent.svg?branch=gh-pages)](https://travis-ci.org/jwillmer/jekyllDecent) 
+[![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](#license)
+[![Release v1.1.6](https://img.shields.io/badge/release-v1.1.6-blue.svg)](https://github.com/jwillmer/jekyllDecent/releases/tag/1.1.6)
 
-## About
-Jekyll-Avalon is a [Materialize](https://github.com/dogfalo/materialize) Jekyll theme.
+This is a blog template for a static site generator named [Jekyll](https://jekyllrb.com/docs/home/) based on a [Ghost](https://ghost.org) template named [Decent](https://github.com/serenader2014/decent). 
 
-Featuring:
-* Material Design
-* Responsive Web Design
-* Tags and categories browsing
-* Lazy loading images
+Installation instructions, features, previews and more can be found in the **[GitHub generated blog](http://jwillmer.github.io/jekyllDecent)**. This blog is automatically generated out of the source code in the `gh-pages` branch. If you like to see the theme in production have a look at [jwillmer.de](http://jwillmer.de).
 
-## Installation
-This theme ***CANNOT* be built by GitHub. You have to build it yourself.
-Use the following command to build.
-
-```
-bundle install
-jekyll serve
-```
-
-Then upload the content in `_site` to GitHub or your host.
-
-## Config
-Change everything you need in `_config.yml`. Change the footer in `_includes/footer.html`.
-
-If you want to change the color, go [here](https://github.com/dogfalo/materialize) to download SASS version 
-and replace the link in `_includes/head.html`.
-
-For comment support, you can use [Disqus](https://disqus.com/) and add the embed code to `_layouts/post.html`.
-Same for Google Analytics, add the embed code to `_includes/script.html`.
-
-## Post
-All the usable fields available are in `2016-10-27-welcome-to-jekyll.markdown`.
+[![](./media/img/2016-06-08-Readme-front-page-previewe.jpg)](http://jwillmer.github.io/jekyllDecent)
