@@ -1,7 +1,7 @@
-title: Long Haul
+title: Chelsea Irizarry
 description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
 
-url: http://brianmaierjr.github.com/long-haul
+url: https://chelseairizarry.github.io/
 baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
@@ -20,9 +20,9 @@ navigation:
    url: /contact
 
 social:
-   github: brianmaierjr
-   twitter: brianmaierjr
-   facebook: brianmaierjr
-   email: brimaidesigns@gmail.com
+   github: ChelseaIrizarry
+   twitter: ChelseaIrizarry
+   facebook: ChelseaIrizarry
+   email: cirizarr@mail.umw.edu
 
 google_analytics: "UA-58263416-1"
