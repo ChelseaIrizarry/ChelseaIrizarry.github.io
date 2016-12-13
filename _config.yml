@@ -6,21 +6,21 @@ gems:
 # Site settings
 title: "Chelsea Irizarry"
 description: > # this means to ignore newlines until "email:"
-   A Jekyll theme - Medium inspired
+   A CPSC350 blog.
 
 email: cirizarr@mail.umw.edu
 #blog logo
-logo: "/assets/images/logo.jpg"
+logo: "/assets/images/df_logo.jpg"
 # blog cover
-cover: "/assets/images/arches.jpg"
+cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
 
 name: 'Chelsea Irizarry'
 author: 'Chelsea Irizarry'
-author_image: "/assets/images/chelsea.jpg"
+author_image: "/assets/images/author.jpg"
 
 paginate:	5
 
-url: "https://chelseairizarry.github.io" # the base hostname & protocol for your site
+url: "https://chelseairizarry.github.io/" # the base hostname & protocol for your site
 baseurl: ""
 #used to display twitter cards
 twitter_handle: '@ChelseaIrizarry'
@@ -31,7 +31,7 @@ twitter_handle: '@ChelseaIrizarry'
 # social icons and sharing options
 social:
   - icon:	twitter
-    url:	https://twitter.com/dirkfabisch
+    url:	https://twitter.com/ChelseaIrizarry
     desc: Follow me on twitter
     share_url: http://twitter.com/share
     share_title: ?text=
