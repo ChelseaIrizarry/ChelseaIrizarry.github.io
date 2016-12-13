@@ -4,6 +4,7 @@ title:  "Welcome"
 date:   2016-12-13 13:33:00
 categories: mediator feature
 image: /assets/article_images/sunrise.JPG
+image2: /assets/article_images/sunrise.JPG
 ---
 
 Welcome! This site is a compilation of different things I learned or found interesting over the past year. 
