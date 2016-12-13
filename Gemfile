@@ -1,9 +1,8 @@
-source 'http://rubygems.org'
+source "https://rubygems.org"
 
+gem "json"
 gem "jekyll"
+gem "jekyll-sitemap"
+gem "jekyll-feed"
 gem "jekyll-paginate"
-gem "susy"
-gem "normalize-scss"
-gem "compass"
-gem "sass"
-gem "support-for"
+gem "jekyll-gist"
