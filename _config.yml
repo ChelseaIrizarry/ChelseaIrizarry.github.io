@@ -1,9 +1,9 @@
 # Site settings
-name: Travelogue
-description: 'A minimal, single-column Jekyll theme that provides an immersive read experience for your readers'
+name: Chelsea Irizarry
+description: 'A CPSC 350 blog.'
 
 baseurl: '' # the subpath of your site, e.g. /blog
-url: 'http://yourdomain.com' # the base hostname & protocol for your site
+url: 'https://chelseairizarry.github.io/' # the base hostname & protocol for your site
 
 # Build settings
 markdown:            kramdown
@@ -15,9 +15,9 @@ paginate:            8
 paginate_path:       page/:num/
 
 author:
-    name: 'Salvatore Gentile'
+    name: 'Chelsea Irizarry'
     email: ''
-    uri: 'https://github.com/SalGnt'
+    uri: 'https://github.com/ChelseaIrizarry'
 
 sass:
     sass_dir: _sass
