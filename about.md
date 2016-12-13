@@ -3,16 +3,10 @@ layout: page
 title: About
 permalink: /about/
 ---
+![Sample Image](https://chelseairizarry.github.io/assets/images/Chelsea.jpg)
 
-Travelogue is a minimal, single-column Jekyll theme that provides an immersive read experience for your readers.
+Hello! I am a current University of Mary Washington senior studying computer science and digital studies. I work as a tutor at the Digital Knowledge Center. I assist students seeking help with WordPress, video, audio, or photo editing. Some of my interests are playing soccer and photography.
+-Chelsea Irizarry
 
-![Post](https://dl.dropboxusercontent.com/u/18322837/GitHub/Travelogue/Post.png)
-
-## Getting Started
-The theme provides a complete Jekyll setup. Download it and start the Jekyll server.
-
-    git clone https://github.com/SalGnt/Travelogue.git
-    cd Travelogue
-    jekyll serve
-
-Visit the [Jekyll website](http://jekyllrb.com/) for more information.
+Want to know more about me?
+Visit [chelseairizarry.org](http://chelseairizarry.org).
