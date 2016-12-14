@@ -6,4 +6,166 @@ image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
 image2: /assets/article_images/2014-11-30-mediator_features/night-track-mobile.JPG
 ---
 
-This post is about learning SocketIO.
+In my CPSC350 course we learned about SocketIO. This 
+
+{% highlight ruby %}
+server.py
+
+import os
+import uuid
+import psycopg2
+import psycopg2.extras
+from flask import Flask, session
+from flask.ext.socketio import SocketIO, emit
+
+app = Flask(__name__, static_url_path='')
+app.config['SECRET_KEY'] = 'secret!'
+
+socketio = SocketIO(app)
+
+messages = []
+users = {}
+
+def connectToDB():
+  connectionString = 'dbname=space user=astro password=astro123 host=localhost'
+  print connectionString
+  try:
+    return psycopg2.connect(connectionString)
+  except:
+    print("Can't connect to database")
+
+@socketio.on('connect', namespace='/iss')
+def makeConnection():
+    print('connected')
+    conn = connectToDB()
+    cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
+    
+    cur.execute("SELECT username, message FROM messages JOIN users ON messages.userid = users.id")
+    msgs = cur.fetchall()
+    conn.commit()
+    
+    session['uuid'] = uuid.uuid1()        
+            
+    for msg in msgs:
+        tmp = {'text':msg['message'], 'name':msg['username']}
+        emit('message', tmp)
+            
+        
+@socketio.on('identify', namespace = '/iss')
+def on_identify(person):
+    print('identify ' + person)
+    
+@socketio.on('login', namespace='/iss')
+def on_login(username, password):
+    conn = connectToDB()
+    cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
+    print ('login' + username + password)
+    
+    session['username']=username
+    users[session['uuid']]={'username': username}
+    
+    try:
+        query = cur.mogrify("SELECT * FROM users WHERE username = %s AND password = crypt(%s, password) " , (users[session['uuid']]['username'], password))
+        cur.execute(query)
+        results=cur.fetchall()
+        conn.commit()
+        print (results)
+        
+        #Check if there is a result 
+        if (cur.rowcount==1):
+            print('connected roster')
+            print(session['uuid'])
+            print(users[session['uuid']]['username'])
+            print("ida")
+            
+            emit('loggedin', users[session['uuid']]['username'])
+            
+            tmp = {'text':"is now connected", 'name':users[session['uuid']]['username']}
+            emit('message', tmp, broadcast=True)
+            
+        #Incorrect password or not a user
+        else:
+            print("Invalid username or password!")
+            conn.rollback()
+        
+    except:
+        print("Error logging in!")
+        conn.rollback()
+    
+    conn.commit()    
+
+@socketio.on('message', namespace='/iss')
+def new_message(message1):
+    conn = connectToDB()
+    cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
+    
+    try:
+        print(users)
+        print(session['uuid'])
+        print("idb")
+        query = cur.mogrify("""INSERT INTO messages(message, userid) VALUES(%s, (SELECT id FROM users WHERE username = %s))""", (message1, users[session['uuid']]['username']))
+        print(query)
+        cur.execute(query)
+        conn.commit()
+        tmp = {'text':message1, 'name': users[session['uuid']]['username']}
+        emit('message', tmp, broadcast=True)
+        
+    except:
+        print("Error messaging!")
+        conn.rollback()
+    
+    conn.commit()
+    
+@socketio.on('search', namespace='/iss')
+def search(term):
+    conn = connectToDB()
+    cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
+
+    try:
+        print("hi")
+        query = cur.mogrify("SELECT username, message FROM messages JOIN users ON messages.userid = users.id WHERE messages.message LIKE '%%%s%%' OR users.username LIKE '%%%s%%'" % (term, term, ))
+        print(query)
+        cur.execute(query)
+        results = cur.fetchall()
+        print(results)
+        conn.commit()
+        
+    except:
+        print("error searching")
+        conn.rollback()
+    
+    emit('clear')
+
+    for r in results:
+        tmp = {'message1':r['message'], 'user':r['username']}
+        emit('found', tmp)
+
+@socketio.on('disconnect', namespace='/chat')
+def on_disconnect():
+    print 'disconnect'
+
+@app.route('/')
+def mainIndex():
+    print 'in hello world'
+    return app.send_static_file('index.html')
+    
+@app.route('/js/<path:path>')
+def static_proxy_js(path):
+    # send_static_file will guess the correct MIME type
+    return app.send_static_file(os.path.join('js', path))
+    
+@app.route('/css/<path:path>')
+def static_proxy_css(path):
+    # send_static_file will guess the correct MIME type
+    return app.send_static_file(os.path.join('css', path))
+    
+@app.route('/img/<path:path>')
+def static_proxy_img(path):
+    # send_static_file will guess the correct MIME type
+    return app.send_static_file(os.path.join('img', path))
+
+# start the server
+if __name__ == '__main__':
+        socketio.run(app, host=os.getenv('IP', '0.0.0.0'), port =int(os.getenv('PORT', 8080)), debug=True)
+
+{% endhighlight %}
