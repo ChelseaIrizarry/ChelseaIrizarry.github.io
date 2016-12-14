@@ -6,12 +6,12 @@ image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
 image2: /assets/article_images/2014-11-30-mediator_features/night-track-mobile.JPG
 ---
 
-In my CPSC350 course we learned about SocketIO. I really enjoyed this assignment because I always wondered howa chatroom worked.
-Although, I found the assignment to be one of my more difficult ones to complete, it does in fact work. Once I figured out how the data 
-is retreived and send between the functions in the different files this assignment became a lot easier. In the HTML file the Angular JS
-directive sends information to the Javascript file which then the information to the Python file, the information then makes its way back
-to the Javascript file and then outputted to the HTML file. Each socketio function in the Javascript file updates the screen with out 
-consistently reloading the screen, thus, quickly and efficiently displaying information to the user.
+In my CPSC350 course we learned about SocketIO. I really enjoyed the SocketIO assignment because I always wondered how a chatroom worked.
+Although, I found the assignment to be one of my more difficult ones to complete, it was not to hard to figure out. Once I figured out how the data 
+is retreived and send between the functions I was easily able to complete the assignment. In the HTML file the Angular JS
+directive sends information to the Javascript file which then passed the information to the Python file, the information then makes its way back
+to the Javascript file and would then be outputted to the HTML file. Each socketio function in the Javascript file updates the screen without 
+consistently reloading the site, thus, quickly and efficiently displaying information to the user.
 
 
 SocketIO Pt1 Rudiment:
