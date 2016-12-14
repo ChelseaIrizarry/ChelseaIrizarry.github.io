@@ -2,8 +2,8 @@
 layout: post
 title:  "Using Jerkyll, Flask, and WordPress"
 date:   2016-12-13 13:35:00
-image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
-image2: /assets/article_images/2014-11-30-mediator_features/night-track-mobile.JPG
+image: /assets/article_images/header/beach.JPG
+image2: /assets/article_images/header/beach_mobile.JPG
 ---
 
 I have had a lot of experience using WordPress over the past four years at the University of Mary Washington. I have found that WordPress is

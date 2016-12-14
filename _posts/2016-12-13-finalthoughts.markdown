@@ -2,8 +2,8 @@
 layout: post
 title:  "Database and Websites Final Thought"
 date:   2016-12-13 13:37:00
-image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
-image2: /assets/article_images/2014-11-30-mediator_features/night-track-mobile.JPG
+image: /assets/article_images/header/sunrise.JPG
+image2: /assets/article_images/header/sunrise_mobile.JPG
 ---
  
 Prior to enter CPSC350 Application of Databases I dabbled with some HTML and SQL. I knew the basics of creating a html page and how to manipulate 

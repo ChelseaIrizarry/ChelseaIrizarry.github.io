@@ -2,8 +2,8 @@
 layout: post
 title:  "Feed a Friend"
 date:   2016-12-13 13:34:00
-image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
-image2: /assets/article_images/2014-11-30-mediator_features/night-track-mobile.JPG
+image: /assets/article_images/header/fall.JPG
+image2: /assets/article_images/header/fall_mobile.JPG
 ---
 
 I partnered up with Nate Nuval and Michael Prime to bring you Feed a Friend. The idea originating from the abundance or lack of mealswipes
