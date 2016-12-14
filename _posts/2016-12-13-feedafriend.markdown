@@ -2,7 +2,6 @@
 layout: post
 title:  "Feed a Friend"
 date:   2016-12-13 13:34:00
-categories: mediator feature
 image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
 image2: /assets/article_images/2014-11-30-mediator_features/night-track-mobile.JPG
 ---
@@ -10,7 +9,7 @@ image2: /assets/article_images/2014-11-30-mediator_features/night-track-mobile.J
 I partnered up with Nate Nuval and Michael Prime to bring you Feed a Friend. An idea originating by the abundance or lack of mealswipes
 at the end of each semester. We wanted to propose a solution to the issue at hand in which students can help their fellow classmate in need.
 
-![Feed-a-Friend Team](https://chelseairizarry.github.io/assets/article_images/feedafriend/team3.JPG)
+![Feed-a-Friend Team (Left to Right: Nate, Michael, Chelsea)](https://chelseairizarry.github.io/assets/article_images/feedafriend/team3.JPG)
 
 On our site, we allowed for two different types of users, Givers and Receivers. Givers are students with an abundance of mealswipes while 
 Receivers are students in need of mealswipes. 
