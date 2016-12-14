@@ -6,10 +6,16 @@ image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
 image2: /assets/article_images/2014-11-30-mediator_features/night-track-mobile.JPG
 ---
 
-In my CPSC350 course we learned about SocketIO. This 
+In my CPSC350 course we learned about SocketIO. 
 
+
+The follow is the code for my SocketIO Pt1 Rudiment.
+
+![SocketIO Pt1 Chatroom](https://chelseairizarry.github.io/assets/article_images/socket/chat.JPG)
+
+Python File
 {% highlight ruby %}
-server.py
+#server.py
 
 import os
 import uuid
@@ -167,5 +173,141 @@ def static_proxy_img(path):
 # start the server
 if __name__ == '__main__':
         socketio.run(app, host=os.getenv('IP', '0.0.0.0'), port =int(os.getenv('PORT', 8080)), debug=True)
+
+{% endhighlight %}
+
+SQL file
+{% highlight ruby %}
+#space.sql
+
+DROP DATABASE IF EXISTS space;
+CREATE DATABASE space;
+
+DROP ROLE IF EXISTS astro;
+CREATE ROLE astro WITH password 'astro123' LOGIN;
+\c space
+
+CREATE EXTENSION pgcrypto;
+
+DROP TABLE IF EXISTS users;
+CREATE TABLE users (
+    id serial NOT NULL,
+    username text NOT NULL,
+    password text NOT NULL,
+    PRIMARY KEY(id)
+);
+
+GRANT ALL ON users TO astro;
+GRANT ALL ON users_id_seq TO astro;
+
+DROP TABLE IF EXISTS messages;
+CREATE TABLE messages(
+    id serial NOT NULL,
+    message varchar(256) NOT NULL,
+    userid int NOT NULL,
+    PRIMARY KEY(id),
+    
+    CONSTRAINT user_id_fk
+    FOREIGN KEY (userid)
+    REFERENCES users (id)
+);
+
+GRANT ALL ON messages TO astro;
+GRANT ALL ON messages_id_seq TO astro;
+GRANT ALL ON messages_userid_seq TO astro;
+
+INSERT INTO users(username, password) VALUES('chelsea', crypt('chelsea', gen_salt('bf')));
+INSERT INTO users(username, password) VALUES('raz', crypt('raz', gen_salt('bf')));
+INSERT INTO users(username, password) VALUES('raze', crypt('raze', gen_salt('bf')));
+
+INSERT INTO messages(message, userid) VALUES('Test1', (SELECT id FROM users WHERE username = 'chelsea'));
+INSERT INTO messages(message, userid) VALUES('Test2', (SELECT id FROM users WHERE username = 'chelsea'));
+INSERT INTO messages(message, userid) VALUES('Test3', (SELECT id FROM users WHERE username = 'raze'));
+INSERT INTO messages(message, userid) VALUES('Test4', (SELECT id FROM users WHERE username = 'raz'));
+
+{% endhighlight %}
+
+Javascript File
+{% highlight ruby %}
+#controller.js
+
+function login(showhide){
+    if(showhide == "show"){
+        document.getElementById('popupbox').style.visibility="visible";
+        document.getElementById('sendbox').style.visibility="hidden";
+        document.getElementById('searchbox').style.visibility="hidden";
+    }else if(showhide == "hide"){
+        document.getElementById('popupbox').style.visibility="hidden"; 
+        document.getElementById('sendbox').style.visibility="visible";
+        document.getElementById('searchbox').style.visibility="visible";
+    }
+}
+
+var ISSChatApp = angular.module('ISSChatApp', []);
+
+ISSChatApp.controller('ChatController', function($scope){
+    var socket = io.connect('https://' + document.domain + ':' + location.port + '/iss'); 
+    
+    $scope.messages = [];
+    $scope.found = [];
+    $scope.name = '';
+    $scope.text = '';
+    
+    socket.on('connect', function(){
+        console.log('connected');
+    });
+    
+    $scope.login2 = function login2() {
+        console.log("Trying to log in");
+        socket.emit('login', $scope.name2, $scope.password);
+    };
+    
+    socket.on('loggedin', function(username){
+        console.log('login hidden');
+        login('hide');
+        $scope.name = username;
+        $scope.$apply();
+        
+    });
+    
+    $scope.setName = function setName() {
+        console.log('setting name');
+        $scope.name=$scope.name2;
+    };
+    
+    $scope.send2 = function send2(){
+        console.log('Sending message: ', $scope.text);
+        socket.emit('message', $scope.text);
+        $scope.text = '';
+    };
+    
+    socket.on('message', function(msg){
+        console.log('messaging');
+        $scope.messages.push(msg);
+        $scope.$apply();
+        var elem = document.getElementById('msgpane');
+        elem.scrollTop = elem.scrollHeight;
+    });
+    
+    $scope.searching = function searching() {
+        console.log("Searching for " + $scope.term);
+        socket.emit('search', $scope.term);
+    };
+    
+    socket.on('found', function(msg){
+        console.log('print results');
+        $scope.found.push(msg);
+        $scope.$apply();
+        var elem = document.getElementById('msgpane2');
+        elem.scrollTop = elem.scrollHeight;
+    });
+    
+     socket.on('clear', function(){
+        console.log('clear');
+        $scope.found = [];
+        $scope.$apply();
+     });
+     
+});
 
 {% endhighlight %}
