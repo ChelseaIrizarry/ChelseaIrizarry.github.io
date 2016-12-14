@@ -21,11 +21,18 @@ The following shows the front-end and the back-end of my personal WordPress powe
 It is clear that the back-end or dashboard is more user friendly for those non-programmers wanting to own a site. A visible issue with this setup
 is that you cannot see any code making it difficult or impossible to attach addition databases to the site.
 
-Below is the back-end of this Jerkyll powered site. As you can see it is not as appealing to the eye as a WordPress site would be. 
+Below is the back-end of this Jerkyll powered site. As you can see it is not as appealing to the eye as a WordPress site would be. Still, fairly
+simple to use, Jerkyl also allows you to create post or pages without writing in html or css. Using Jerkyll allows for html code to be accessible
+and adjustable to the needs of the programmer. Although there are no fancy tools such as spell-check Jerkyll is a very good choice for beginner
+web designers.
 
 ![Jerkyll Back-End](https://chelseairizarry.github.io/assets/article_images/powered/j_back.JPG)
 
 Lastly, the following is the back-end of a Flaskified site called Where In The World in which you can search different cities and countries
-within the database. 
+within the database. This site can easily be altered in any way, given you know HTML and CSS. You have access to the raw code and must type 
+information to be displayed onto the site in HTML. Databases can easily be attached using in a Python written server.
 
 ![Flask Back-End](https://chelseairizarry.github.io/assets/article_images/powered/f_back.JPG)
+
+Thus, all three are great methods for developing a website. Depending on your needs one or more of these options could benefit you on your quest
+to developing a website.

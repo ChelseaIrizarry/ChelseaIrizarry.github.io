@@ -18,17 +18,20 @@ Receivers are students in need of mealswipes.
 
 How to use Feed-A-Friend:
 1) Login
+
 ![Login Page](https://chelseairizarry.github.io/assets/article_images/feedafriend/frontpage.JPG)
 
 Proceed as followed depending on your user type.
 
 Giver:
+
 ![Giver Dashboard](https://chelseairizarry.github.io/assets/article_images/feedafriend/testg.JPG)
 
 2) Proceed to update availability, if needed.
 3) Respond to any pending requests in email.
 
 Receiver:
+
 ![Receiver Dashboard](https://chelseairizarry.github.io/assets/article_images/feedafriend/testr.JPG)
 
 2) Proceed to search by user or meal type.
@@ -37,10 +40,12 @@ Receiver:
 
 If the given user wanted to check their profile information all they would have to do would be to click their profile image and a expandable
 textbox would appear containing their information. 
+
 ![View Profile](https://chelseairizarry.github.io/assets/article_images/feedafriend/profile.JPG)
 
 To update the profile information, the user would then click edit profile. From here, the
 user can edit any or all fields, including the user type.
+
 ![Edit Profile](https://chelseairizarry.github.io/assets/article_images/feedafriend/edit.JPG)
 
 Current limitations:
