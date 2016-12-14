@@ -7,5 +7,6 @@ image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
 image2: /assets/article_images/2014-11-30-mediator_features/night-track-mobile.JPG
 ---
 
-Welcome! This site is a compilation of different things I learned or found interesting over the past year. 
+Welcome! This site is a compilation of different things I learned or found interesting over the past year including topics such as 
+Jerkyll, database application, Flask, and socketIO. 
 If you would like to know more about me please visit [Chelsea Irizarry](http://chelseairizarry.org).

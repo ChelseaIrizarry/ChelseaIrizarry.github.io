@@ -36,10 +36,17 @@ Receiver:
 3) Request desired meal time and user.
 4) Contact user for location and confirmation.
 
+If the given user wanted to check their profile information all they would have to do would be to click their profile image and a expandable
+textbox would appear containing their information. 
+![View Profile](https://chelseairizarry.github.io/assets/article_images/feedafriend/profile.JPG)
+
+To update the profile information, the user would then click edit profile. From here, the
+user can edit any or all fields, including the user type.
+![Edit Profile](https://chelseairizarry.github.io/assets/article_images/feedafriend/edit.JPG)
 
 Current limitations:
 We only allow for UMW students to signup for Feed-a-Friend. Availability must be reset daily. Lack of a messaging system to communicate 
-between a giver and receiver who "matched".
+between a giver and receiver who "matched". Users cannot change their profile images.
 
 Future progress:
 Although it is unlikely that this project will be continued, we can only hope in the future we could expand and allow for users from various
